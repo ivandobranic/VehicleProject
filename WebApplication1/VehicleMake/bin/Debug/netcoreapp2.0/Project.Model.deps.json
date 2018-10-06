@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.0",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.0": {
+      "Project.Model/1.0.0": {
+        "dependencies": {
+          "Project.Model.Common": "1.0.0"
+        },
+        "runtime": {
+          "Project.Model.dll": {}
+        }
+      },
+      "Project.Model.Common/1.0.0": {
+        "runtime": {
+          "Project.Model.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Project.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Project.Model.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

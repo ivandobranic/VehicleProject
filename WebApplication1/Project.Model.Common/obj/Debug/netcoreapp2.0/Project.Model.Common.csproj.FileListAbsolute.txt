@@ -1,0 +1,9 @@
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\Project.Model.Common\bin\Debug\netcoreapp2.0\Project.Model.Common.deps.json
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\Project.Model.Common\bin\Debug\netcoreapp2.0\Project.Model.Common.dll
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\Project.Model.Common\bin\Debug\netcoreapp2.0\Project.Model.Common.pdb
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\Project.Model.Common\obj\Debug\netcoreapp2.0\Project.Model.Common.csprojResolveAssemblyReference.cache
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\Project.Model.Common\obj\Debug\netcoreapp2.0\Project.Model.Common.csproj.CoreCompileInputs.cache
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\Project.Model.Common\obj\Debug\netcoreapp2.0\Project.Model.Common.AssemblyInfoInputs.cache
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\Project.Model.Common\obj\Debug\netcoreapp2.0\Project.Model.Common.AssemblyInfo.cs
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\Project.Model.Common\obj\Debug\netcoreapp2.0\Project.Model.Common.dll
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\Project.Model.Common\obj\Debug\netcoreapp2.0\Project.Model.Common.pdb

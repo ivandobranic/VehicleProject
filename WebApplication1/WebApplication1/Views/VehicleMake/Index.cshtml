@@ -1,0 +1,56 @@
+﻿@using X.PagedList.Mvc.Core;
+@using X.PagedList;
+@model StaticPagedList<Project.WebAPI.Models.VehicleMakeViewModel>
+@{
+    ViewData["Title"] = "VehicleMake";
+}
+<h2>VehicleMake</h2>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<p>
+    @using (Html.BeginForm("Index", "VehicleMake", FormMethod.Get))
+    {
+        <text>Search By Name:</text>
+        @Html.TextBox("search") <input type="submit" value="Search" />
+    }
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+
+                @Html.ActionLink("Name", "Index", new { isAscending = ViewBag.sortOrder})
+
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.First().Abrv)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Abrv)
+                </td>
+
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@Html.PagedListPager(Model, pageNumber => Url.Action("Index", new { pageNumber}))

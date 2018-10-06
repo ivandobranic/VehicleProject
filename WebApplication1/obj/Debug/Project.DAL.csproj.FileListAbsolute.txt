@@ -1,0 +1,10 @@
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\WebApplication1\DatabaseGeneric\bin\Debug\Project.DAL.dll
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\WebApplication1\DatabaseGeneric\bin\Debug\Project.DAL.pdb
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\WebApplication1\DatabaseGeneric\bin\Debug\SD.LLBLGen.Pro.ORMSupportClasses.dll
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\WebApplication1\DatabaseGeneric\bin\Debug\SD.LLBLGen.Pro.ORMSupportClasses.pdb
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\WebApplication1\DatabaseGeneric\bin\Debug\SD.LLBLGen.Pro.ORMSupportClasses.xml
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\WebApplication1\obj\Debug\Project.DAL.csprojResolveAssemblyReference.cache
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\WebApplication1\obj\Debug\Project.DAL.csproj.CoreCompileInputs.cache
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\WebApplication1\obj\Debug\Project.DAL.csproj.CopyComplete
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\WebApplication1\obj\Debug\Project.DAL.dll
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\WebApplication1\obj\Debug\Project.DAL.pdb

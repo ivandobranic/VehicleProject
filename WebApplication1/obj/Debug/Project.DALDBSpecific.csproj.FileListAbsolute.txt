@@ -1,0 +1,13 @@
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\WebApplication1\DatabaseSpecific\bin\Debug\Project.DALDBSpecific.dll.config
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\WebApplication1\DatabaseSpecific\bin\Debug\Project.DALDBSpecific.dll
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\WebApplication1\DatabaseSpecific\bin\Debug\Project.DALDBSpecific.pdb
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\WebApplication1\DatabaseSpecific\bin\Debug\SD.LLBLGen.Pro.DQE.SqlServer.dll
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\WebApplication1\DatabaseSpecific\bin\Debug\SD.LLBLGen.Pro.ORMSupportClasses.dll
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\WebApplication1\DatabaseSpecific\bin\Debug\SD.LLBLGen.Pro.ORMSupportClasses.pdb
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\WebApplication1\DatabaseSpecific\bin\Debug\SD.LLBLGen.Pro.ORMSupportClasses.xml
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\WebApplication1\DatabaseSpecific\bin\Debug\SD.LLBLGen.Pro.DQE.SqlServer.pdb
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\WebApplication1\obj\Debug\Project.DALDBSpecific.csprojResolveAssemblyReference.cache
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\WebApplication1\obj\Debug\Project.DALDBSpecific.csproj.CoreCompileInputs.cache
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\WebApplication1\obj\Debug\Project.DALDBSpecific.csproj.CopyComplete
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\WebApplication1\obj\Debug\Project.DALDBSpecific.dll
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\WebApplication1\obj\Debug\Project.DALDBSpecific.pdb

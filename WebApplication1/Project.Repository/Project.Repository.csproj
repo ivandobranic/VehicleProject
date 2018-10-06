@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="3.2.0" />
+    <PackageReference Include="SD.LLBLGen.Pro.DQE.SqlServer" Version="5.3.5-hotfix-20180409" />
+    <PackageReference Include="SD.LLBLGen.Pro.ORMSupportClasses" Version="5.3.5-hotfix-20180409" />
+    <PackageReference Include="X.PagedList.Mvc.Core" Version="7.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Project.Model.Common\Project.Model.Common.csproj" />
+    <ProjectReference Include="..\..\Project.Repository.Common\Project.Repository.Common.csproj" />
+    <ProjectReference Include="..\Project.DAL.csproj" />
+    <ProjectReference Include="..\Project.DALDBSpecific.csproj" />
+    <ProjectReference Include="..\VehicleMake\Project.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeAnalysis">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.codeanalysis.common\2.3.1\lib\netstandard1.3\Microsoft.CodeAnalysis.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
