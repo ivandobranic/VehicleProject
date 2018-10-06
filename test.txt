@@ -1,1 +1,2 @@
-kreæemo, prvi commit
+1.kreæemo, prvi commit
+2.drugi commit.
