@@ -1,0 +1,28 @@
+<div class="container">
+  &nbsp;
+  <div align="center">
+    <ul class="list-unstyled jumbotron" *ngFor="let cart of shoppingCartList">
+      <div>
+        <li>Name:&nbsp;
+          <b>{{cart.vehicleMake}}</b>
+        </li>
+        <li>Model:&nbsp;
+          <b>{{cart.vehicleModel}}</b>
+        </li>
+        <li>Price:&nbsp;
+          <b>{{cart.price}}$</b>
+        </li>
+        <li>
+          <button (click) ="RemoveFromCart(cart.id, cart.vehiclesForSaleId)">Remove from Cart</button>
+        </li>
+      </div>
+    </ul>
+  </div>
+</div>
+<div class="jumbotron">
+  <h3 align="center">Total Price:</h3>
+ <h3 align="center">{{shoppingCartTotalPrice}}$</h3>
+ <div align="center">
+ <button (click) ="ProceedToCheckOut()">Proceed To Checkout</button>
+</div> 
+</div>

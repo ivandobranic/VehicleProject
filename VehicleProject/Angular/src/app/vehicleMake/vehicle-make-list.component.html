@@ -1,0 +1,49 @@
+<div>
+<div class="input-group">
+    <input #textbox type="text" name="search2" [(ngModel)]="search">
+    <span class="input-group-btn">
+    <button type="submit" (click)="searchMake(textbox.value)" class = "btn btn-default">Search</button>
+    </span>
+</div>
+&nbsp;
+&nbsp;
+<div>
+    <button type="submit" (click)="sortMake()" class = "btn btn-default">Sort</button>
+</div>
+&nbsp;
+&nbsp;
+<div>
+ <a routerLink = "Create">Create</a>
+</div>
+&nbsp;
+&nbsp;
+<div class="table-striped" style="font-size:large">
+    <table class="table">
+        <thead>
+
+            <tr>
+                <th>Name</th>
+                <th>Abrv</th>
+                <th>Created By</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr *ngFor="let vehicle of vehicleMakeList| paginate : {id: 'server', itemsPerPage: pageSize, currentPage : pageNumber, totalItems: totalCount}">
+                <td>{{vehicle.name}}</td>
+                <td>{{vehicle.abrv}}</td>
+                <td>{{vehicle.createdBy}}</td>
+                <div class="col-md-1">
+                    <td>
+                        <a [routerLink]="['Edit', vehicle.id ]">Edit</a>
+                    </td>
+                    <td>
+                        <a [routerLink]="['Delete', vehicle.id ]">Delete</a>
+                    </td>
+                </div>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<pagination-controls (pageChange)="getPage($event)" id="server"></pagination-controls>
+</div>

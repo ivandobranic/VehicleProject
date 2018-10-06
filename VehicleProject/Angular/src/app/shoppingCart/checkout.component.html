@@ -1,0 +1,74 @@
+<div>
+  <form #CheckoutForm="ngForm">
+    <div class="container" style="width:640px">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Check Out</h3>
+        </div>
+        <div class="panel-body">
+          <div class="form-group" [class.has-error]="firstNameControl.invalid && firstNameControl.touched">
+            <label for="firstName" class="control-label">First Name</label>
+            <input id="firstname" name="firstName" [(ngModel)]="firstName" type="text" class="form-control" 
+            required #firstNameControl="ngModel">
+            <span class="text-danger" *ngIf="firstNameControl.invalid && firstNameControl.touched">
+             First Name is required
+            </span>
+          </div>
+          <div class="form-group" [class.has-error]="lastNameControl.invalid && lastNameControl.touched">
+            <label for="lastName" class="control-label">Last Name</label>
+            <input id="lastname" name="lastName" [(ngModel)]="lastName" type="text" class="form-control" [(ngModel)]="lastName"
+            required #lastNameControl="ngModel">
+            <span class="text-danger" *ngIf="lastNameControl.invalid && lastNameControl.touched">
+              Last Name is required
+             </span>
+          </div>
+          <div class="form-group" [class.has-error]="emailControl.invalid && emailControl.touched">
+              <label for="Email" class="control-label">Email</label>
+              <input id="email" name="Email" [(ngModel)]="Email" type="email" class="form-control" #emailControl="ngModel" required>
+              <span class="text-danger" *ngIf="emailControl.invalid && emailControl.touched">
+                Email is required
+               </span>
+            </div>
+          <div class="form-group" [class.has-error]="adressControl.invalid && adressControl.touched">
+            <label for="Adress" class="control-label">Adress</label>
+            <input id="adress" name="Adress" [(ngModel)]="Adress" type="text" class="form-control" #adressControl="ngModel" required>
+            <span class="text-danger" *ngIf="adressControl.invalid && adressControl.touched">
+              Adress is required
+             </span>
+          </div>
+          <div class="form-group">
+            <label for="cardType" class="control-label">Card Type</label>
+            <select #selectList id="cardtype" name="cardType" type="text" class="form-control"
+              required>
+              <option>
+                Visa
+              </option>
+              <option>
+                MasterCard
+              </option>
+              </select>
+          </div>
+          <div class="form-group" [class.has-error]="cardNumberControl.invalid && cardNumberControl.touched">
+            <label for="cardNumber" class="control-label">Card Number</label>
+            <input id="cardnumber" name="cardNumber" [(ngModel)]="cardNumber" type="text" class="form-control"
+            required pattern="(\d{16})" #cardNumberControl="ngModel">
+            <span class="text-danger" *ngIf="cardNumberControl.invalid && cardNumberControl.touched">
+             Card Number is required with 16 digits
+             </span>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <button type="submit" class="btn btn-primary" [disabled]="CheckoutForm.invalid"
+          (click)="PlaceOrder(firstName, lastName, Email, Adress, selectList.value, cardNumber)">
+            Place Order
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <span class="text-danger" *ngIf="errorMessage">
+         {{errorMessage}}
+      </span>
+  </div>
+  </form>
+  </div>

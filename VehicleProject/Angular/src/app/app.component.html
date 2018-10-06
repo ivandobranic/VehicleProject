@@ -1,0 +1,36 @@
+<nav class="navbar navbar-default nav-tabs p-3 mb-2 bg-info text-white" >
+  <ul class="nav nav-pills">
+    <li>
+      <a routerLink = "VehicleMakeList" class="text-white">VehicleMakeList</a>
+    </li>
+    &nbsp;
+    &nbsp;
+    <li>
+      <a routerLink = "VehiclesForSaleList" class="text-white">VehiclesForSaleList</a>
+    </li>
+    &nbsp;
+    &nbsp;
+    <li>
+        <a routerLink = "Register" class="text-white">Register</a>
+      </li>
+    &nbsp;
+    &nbsp;
+    <li *ngIf="!user">
+        <a routerLink = "Login" class="text-white">Login</a>
+    </li>
+    <li *ngIf="user">
+     <a [routerLink]="" class="text-white" (click) = "Logout()">Log Out</a>
+    </li>
+    &nbsp;
+    &nbsp;
+    <li *ngIf="user">
+        Hello <b>{{user}}</b>!
+   </li>
+   &nbsp;
+   &nbsp;
+   <li>
+    <a routerLink="ShoppingCart" class="text-white">Cart</a>({{cartNumber}})
+   </li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>

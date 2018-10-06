@@ -1,0 +1,47 @@
+<div>
+  <form>
+    <div class="container" style="width:640px">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Create</h3>
+        </div>
+        <div class="panel-body">
+          <div class="form-group">
+            <label for="vehicleMake" class="control-label">Vehicle Name</label>
+            <input id="vehiclemake" name="vehicleMake" [(ngModel)]="vehicleMake" type="text" class="form-control" 
+            required>
+          </div>
+          <div class="form-group">
+            <label for="vehicleModel" class="control-label">Vehicle Model</label>
+            <input id="vehiclemodel" name="vehicleModel" [(ngModel)]="vehicleModel" type="text" class="form-control">
+            
+          </div>
+          <div class="form-group">
+            <label for="picture" class="control-label">Picture</label>
+            <input id="pic" name="picture" type="file" class="form-control"
+             (change) ="handleFileInput($event)">
+           <img *ngIf="preview" [src]="preview" width="240" height="180">
+          </div>
+          <div class="form-group">
+            <label for="price" class="control-label">Price</label>
+            <input id="Price" name="price" [(ngModel)]="price" type="text" class="form-control"
+              required>
+          </div>
+          <div class="form-group" >
+            <label for="itemsInStockId" class="control-label">Items In Stock Id</label>
+            <input id="itemsinstockid" name="itemsInStockId" [(ngModel)]="itemsInStockId" type="text" class="form-control"
+            required>
+          </div>
+          <div class="form-group" >
+            <label for="itemsInStock" class="control-label">Items In Stock</label>
+            <input id="itemsinstock" name="itemsInStock" [(ngModel)]="itemsInStock" type="text" class="form-control"
+            required>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <button type="submit" class="btn btn-primary" (click)="CreateVehiclesForSale(vehicleMake, vehicleModel, price, itemsInStock, itemsInStockId)">Save</button>
+        </div>
+      </div>
+    </div>
+  </form>
+  </div>

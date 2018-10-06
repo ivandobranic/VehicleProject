@@ -1,0 +1,36 @@
+<div *ngIf="user">
+<form #EditMakeForm="ngForm" (ngSubmit)="Update(EditMakeForm)">
+  <div class="container" style="width:640px">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Edit</h3>
+      </div>
+      <div class="form-group">
+        <label for="id"></label>
+        <input id="id" name="id" [ngModel]="vehicle?.id" (ngModelChange)="vehicle.id = $event" type="hidden" value="vehicle.id" class="form-control">
+      </div>
+      <div class="panel-body">
+        <div class="form-group" [class.has-error]="nameControl.invalid && nameControl.touched">
+          <label for="name" class="control-label">Name</label>
+          <input id="name" name="Name" [ngModel]="vehicle?.name" (ngModelChange)="vehicle.name = $event" type="text" value="vehicle.name"
+            class="form-control" #nameControl="ngModel" required>
+          <span class="help-block" *ngIf="nameControl.invalid && nameControl.touched">
+            Name is required
+          </span>
+        </div>
+        <div class="form-group" [class.has-error]="abrvControl.invalid && abrvControl.touched">
+          <label for="abrv" class="control-label">Abrv</label>
+          <input id="abrv" name="Abrv" [ngModel]="vehicle?.abrv" (ngModelChange)="vehicle.abrv = $event" type="text" value="vehicle.abrv"
+            class="form-control" #abrvControl="ngModel" required>
+          <span class="help-block" *ngIf="abrvControl.invalid && abrvControl.touched">
+            Abrv is required
+          </span>
+        </div>
+      </div>
+      <div class="panel-footer">
+        <button type="submit" class="btn btn-primary" [disabled]="EditMakeForm.invalid">Save</button>
+      </div>
+    </div>
+  </div>
+</form>
+</div>

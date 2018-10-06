@@ -1,0 +1,10 @@
+<ul class="list-unstyled jumbotron">
+    <div>
+    <li ><img [src]="preview" width="240" height="180" ></li>
+    <li>Name:&nbsp;<b>{{vehicle?.vehicleMake}}</b></li>
+    <li>Model:&nbsp;<b>{{vehicle?.vehicleModel}}</b></li>
+    <li>Price:&nbsp;<b>{{vehicle?.price}}$</b></li>
+    <li>Items In Stock:&nbsp;<b>{{vehicle?.itemsInStock}}</b></li>
+    <li><button (click)="Delete()" class="btn btn-primary">Delete</button></li>
+  </div>
+  </ul>

@@ -1,0 +1,66 @@
+<div >
+    <form #EditMakeForm="ngForm">
+      <div class="container" style="width:640px">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Edit</h3>
+          </div>
+          <div class="form-group">
+            <label for="id"></label>
+            <input id="id" name="id" [ngModel]="vehicle?.id" (ngModelChange)="vehicle.id = $event" type="hidden" value="vehicle.id" class="form-control">
+          </div>
+          <div class="panel-body">
+            <div class="form-group" [class.has-error]="nameControl.invalid && nameControl.touched">
+              <label for="name" class="control-label">Name</label>
+              <input id="name" name="Name" [ngModel]="vehicle?.vehicleMake" (ngModelChange)="vehicle.vehicleMake = $event" type="text" value="vehicle.vehicleMake"
+                class="form-control" #nameControl="ngModel" required>
+              <span class="help-block" *ngIf="nameControl.invalid && nameControl.touched">
+                Name is required
+              </span>
+            </div>
+            <div class="form-group" [class.has-error]="modelControl.invalid && modelControl.touched">
+              <label for="model" class="control-label">Model</label>
+              <input id="model" name="vehicleModel" [ngModel]="vehicle?.vehicleModel" (ngModelChange)="vehicle.vehicleModel = $event" type="text" value="vehicle.vehicleModel"
+                class="form-control" #modelControl="ngModel" required>
+              <span class="help-block" *ngIf="modelControl.invalid && modelControl.touched">
+                Model is required
+              </span>
+            </div>
+            <div *ngIf="preview">
+              <img [src]="preview" width="240" height="180">
+            </div>
+            <div class="form-group" [class.has-error]="pictureControl.invalid && pictureControl.touched">
+              <label for="picture" class="control-label">Picture</label>
+              <input id="picture" name="Picture" [(ngModel)]="fileToUpload" type="file" 
+                class="form-control" #pictureControl="ngModel" required (change) ="handleFileInput($event)">
+              <span class="help-block" *ngIf="pictureControl.invalid && pictureControl.touched">
+               Picture is required
+              </span>
+          </div>
+          
+            <div class="form-group" [class.has-error]="priceControl.invalid && priceControl.touched">
+                <label for="price" class="control-label">Price</label>
+                <input id="price" name="Price" [ngModel]="vehicle?.price" (ngModelChange)="vehicle.price = $event" type="text" value="vehicle.price"
+                  class="form-control" #priceControl="ngModel" required>
+                <span class="help-block" *ngIf="priceControl.invalid && priceControl.touched">
+                  Price is required
+                </span>
+            </div>
+          
+            <div class="form-group" [class.has-error]="itemsInStockControl.invalid && itemsInStockControl.touched">
+                <label for="itemsinstock" class="control-label">Items In Stock</label>
+                <input id="itemsinstock" name="itemsInStock" [ngModel]="vehicle?.itemsInStock" (ngModelChange)="vehicle.itemsInStock = $event" type="text" value="vehicle.itemsInStock"
+                  class="form-control" #itemsInStockControl="ngModel" required>
+                <span class="help-block" *ngIf="itemsInStockControl.invalid && itemsInStockControl.touched">
+                 Items In Stock is required
+                </span>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <button type="submit" class="btn btn-primary" [disabled]="EditMakeForm.invalid" 
+            (click)="Update(vehicle.id, vehicle.vehicleMake, vehicle.vehicleModel, vehicle.price, vehicle.itemsInStock)">Save</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    </div>

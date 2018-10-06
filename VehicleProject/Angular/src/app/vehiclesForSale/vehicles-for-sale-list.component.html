@@ -1,0 +1,49 @@
+<div class="container">
+  <div *ngIf="isAdmin()">
+    <a routerLink="Create">Create</a>
+  </div>
+  &nbsp;
+  <div class="row vertical-align">
+    <ul class="list-unstyled jumbotron" *ngFor="let vehicle of vehiclesForSaleList| paginate : {id: 'server', itemsPerPage: pageSize, currentPage : pageNumber, totalItems: totalCount}">
+      <div>
+        <li>
+          <img [src]="getDecodedImage(vehicle.vehiclePicture)" width="240" height="180">
+        </li>
+        <li>Name:&nbsp;
+          <b>{{vehicle.vehicleMake}}</b>
+        </li>
+        <li>Model:&nbsp;
+          <b>{{vehicle.vehicleModel}}</b>
+        </li>
+        <li>Price:&nbsp;
+          <b>{{vehicle.price}}$</b>
+        </li>
+        <li>Items In Stock:&nbsp;
+          <b>{{vehicle.itemsInStock}}</b>
+        </li>
+        <li>
+          <select #selectList>
+            <option *ngFor="let item of cartNumberArray" [value]="item.id">
+              {{item.value}}
+            </option>
+          </select>
+        </li>
+        <li *ngIf="isAdmin()">
+          <a [routerLink]="['Edit', vehicle.id ]">Edit</a>&nbsp;&nbsp;
+          <a [routerLink]="['Delete', vehicle.id ]">Delete</a>
+        </li>
+        <li>
+          <button (click) ="AddToCart(vehicle.id, selectList.value)">Add To Cart</button>
+        </li>
+      </div>
+    </ul>
+    <div>
+      <span class="help-block" *ngIf="errorMessage">
+         {{errorMessage}}
+      </span>
+  </div>
+  </div>
+  <div>
+    <pagination-controls (pageChange)="getPage($event)" id="server"></pagination-controls>
+  </div>
+</div>

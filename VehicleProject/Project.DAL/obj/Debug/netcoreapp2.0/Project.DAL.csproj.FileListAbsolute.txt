@@ -1,0 +1,11 @@
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.DAL\bin\Debug\netcoreapp2.0\Project.DAL.deps.json
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.DAL\bin\Debug\netcoreapp2.0\Project.DAL.runtimeconfig.json
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.DAL\bin\Debug\netcoreapp2.0\Project.DAL.runtimeconfig.dev.json
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.DAL\bin\Debug\netcoreapp2.0\Project.DAL.dll
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.DAL\bin\Debug\netcoreapp2.0\Project.DAL.pdb
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.DAL\obj\Debug\netcoreapp2.0\Project.DAL.csproj.CoreCompileInputs.cache
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.DAL\obj\Debug\netcoreapp2.0\Project.DAL.AssemblyInfoInputs.cache
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.DAL\obj\Debug\netcoreapp2.0\Project.DAL.AssemblyInfo.cs
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.DAL\obj\Debug\netcoreapp2.0\Project.DAL.dll
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.DAL\obj\Debug\netcoreapp2.0\Project.DAL.pdb
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.DAL\obj\Debug\netcoreapp2.0\Project.DAL.csprojAssemblyReference.cache

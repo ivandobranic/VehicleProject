@@ -1,0 +1,18 @@
+<div *ngIf="user">
+<h3 class="panel-title">
+  Delete</h3>
+<table>
+  <tbody>
+    <tr>
+      <td>{{vehicle?.id}}</td>
+    </tr>
+    <tr>
+      <td>{{vehicle?.name}}</td>
+    </tr>
+    <tr>
+      <td>{{vehicle?.abrv}}</td>
+    </tr>
+  </tbody>
+</table>
+<button (click)="Delete()" class="btn btn-primary">Delete</button>
+</div>

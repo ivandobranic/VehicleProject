@@ -1,0 +1,14 @@
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.Repository\bin\Debug\netcoreapp2.0\Project.Repository.deps.json
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.Repository\bin\Debug\netcoreapp2.0\Project.Repository.dll
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.Repository\bin\Debug\netcoreapp2.0\Project.Repository.pdb
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.Repository\bin\Debug\netcoreapp2.0\Project.DAL.dll
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.Repository\bin\Debug\netcoreapp2.0\Project.Repository.Common.dll
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.Repository\bin\Debug\netcoreapp2.0\Project.DAL.pdb
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.Repository\bin\Debug\netcoreapp2.0\Project.Repository.Common.pdb
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.Repository\obj\Debug\netcoreapp2.0\Project.Repository.csproj.CoreCompileInputs.cache
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.Repository\obj\Debug\netcoreapp2.0\Project.Repository.AssemblyInfoInputs.cache
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.Repository\obj\Debug\netcoreapp2.0\Project.Repository.AssemblyInfo.cs
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.Repository\obj\Debug\netcoreapp2.0\Project.Repository.csproj.CopyComplete
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.Repository\obj\Debug\netcoreapp2.0\Project.Repository.dll
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.Repository\obj\Debug\netcoreapp2.0\Project.Repository.pdb
+C:\Users\ivand\OneDrive\Documents\Visual Studio 2017\Projects\VehicleProject\Project.Repository\obj\Debug\netcoreapp2.0\Project.Repository.csprojAssemblyReference.cache
